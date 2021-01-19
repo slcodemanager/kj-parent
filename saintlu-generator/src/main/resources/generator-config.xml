@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <!--加载配置文件取值-->
+    <properties resource="generator.properties"/>
+
+    <context id="Mysql" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+
+
+        <plugin type="${mapper.plugin}">
+            <!--自定义通用Mapper接口，将来所有生成的mapper接口都会继承这个接口-->
+            <property name="mappers" value="${mapper.Mapper}"/>
+            <!--强制生成注解，不管entity与表名是否一致-->
+            <property name="forceAnnotation" value="true"/>
+            <!--区分大小写-->
+            <property name="caseSensitive" value="true"/>
+        </plugin>
+
+            <!--去掉注释-->
+        <commentGenerator >
+            <property name="suppressDate" value="true"/>
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+
+        <!--连接数据库-->
+        <jdbcConnection driverClass="${jdbc.driver}"
+                        connectionURL="${jdbc.url}"
+                        userId="${jdbc.username}"
+                        password="${jdbc.password}">
+        </jdbcConnection>
+
+<!--
+        &lt;!&ndash; 实体 &ndash;&gt;
+        <javaModelGenerator targetPackage="com.saintlu.api.entity"
+                            targetProject="saintlu-api/src/main/java"/>
+
+        &lt;!&ndash; mapper.xml &ndash;&gt;
+        <sqlMapGenerator targetPackage="xml"  targetProject="saintlu-generator/src/main/java/resource"/>
+
+        &lt;!&ndash; mapper 接口 &ndash;&gt;
+        <javaClientGenerator targetPackage="com.saintlu.generator.mapper."
+                             targetProject="saintlu-generator/src/main/java"
+                             type="XMLMAPPER"/>
+-->
+
+        <!-- 不需要讲数据库float,double类型映射为BigDecimal，直接映射成相对应的类型即可。 -->
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+
+        <!-- javaBean生成在哪里 -->
+        <javaModelGenerator
+                targetPackage="com.kj.consume.entity"
+                targetProject="..\kj-consume\src\main\java">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+
+        <!-- sqlMap sql映射文件（xml mapper文件） -->
+        <sqlMapGenerator targetPackage="mybatis.mapper"
+                         targetProject="..\kj-consume\src\main\resources">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+
+        <!-- javaClient：java接口生成的地方  ANNOTATEDMAPPER -->
+        <javaClientGenerator type="XMLMAPPER"
+                             targetPackage="com.kj.consume.mapper"
+                             targetProject="..\kj-consume\src\main\java">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+
+        <!--可以指定数据库中的某个表，%表示所有表-->
+        <table tableName="%" >
+            <!--<generatedKey column="user_id" sqlStatement="Mysql" identity="true"/>-->
+        </table>
+
+    </context>
+</generatorConfiguration>
