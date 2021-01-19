@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kj.consume.mapper.KProductMapper">
+    <resultMap id="BaseResultMap" type="com.kj.consume.entity.KProduct">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="category_id" jdbcType="BIGINT" property="categoryId"/>
+        <result column="category_name" jdbcType="VARCHAR" property="categoryName"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="brief" jdbcType="VARCHAR" property="brief"/>
+        <result column="market_price" jdbcType="DECIMAL" property="marketPrice"/>
+        <result column="shop_price" jdbcType="DECIMAL" property="shopPrice"/>
+        <result column="rebate" jdbcType="DECIMAL" property="rebate"/>
+        <result column="materials_price" jdbcType="DECIMAL" property="materialsPrice"/>
+        <result column="img" jdbcType="VARCHAR" property="img"/>
+        <result column="order_num" jdbcType="INTEGER" property="orderNum"/>
+        <result column="click_count" jdbcType="BIGINT" property="clickCount"/>
+        <result column="sales_sum" jdbcType="BIGINT" property="salesSum"/>
+        <result column="number" jdbcType="BIGINT" property="number"/>
+        <result column="is_free_shipping" jdbcType="INTEGER" property="isFreeShipping"/>
+        <result column="goods_type" jdbcType="INTEGER" property="goodsType"/>
+        <result column="status" jdbcType="INTEGER" property="status"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+    </resultMap>
+    <select id="selectGoodList" parameterType="com.kj.consume.vo.ProductSearchParams"
+            resultMap="BaseResultMap">
+        select id,name,sales_sum,shop_price,img from k_product
+        <if test="queryString != null and queryString != ''">
+            where name like CONCAT('%',#{queryString},'%')
+        </if>
+        <if test="categoryId != null and categoryId != ''">
+            where category_id = #{categoryId}
+        </if>
+
+        <if test="type != null and type == '1'">
+            where order by order_num desc,sales_sum desc
+        </if>
+        <if test="type != null and type == '2'">
+            where order by order_num desc,click_count desc
+        </if>
+
+    </select>
+</mapper>

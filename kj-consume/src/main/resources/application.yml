@@ -1,0 +1,47 @@
+server:
+  port: 8088
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://cdb-r9alkf9p.gz.tencentcdb.com:10013/kuajing?autoReconnect=true&autoReconnectForPools=true&serverTimezone=Asia/Shanghai
+    username: root
+    password: 150914
+    driver-class-name: com.mysql.cj.Driver
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    filters: stat,wall,log4j
+    loginUsername: saintlu
+    loginPassword: saintlu.2020
+
+
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  configLocation: classpath:mybatis/mybatis-config.xml
+
+snowflake:
+  datacenterid: 1
+  machineid: 1
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
