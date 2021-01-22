@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.B2cOrderRefundMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.B2cOrderRefund">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="order_id" jdbcType="VARCHAR" property="orderId" />
+    <result column="slip_number" jdbcType="VARCHAR" property="slipNumber" />
+    <result column="add_time" jdbcType="TIMESTAMP" property="addTime" />
+    <result column="refund_reason" jdbcType="VARCHAR" property="refundReason" />
+    <result column="refund_phone" jdbcType="VARCHAR" property="refundPhone" />
+    <result column="refund_remark" jdbcType="VARCHAR" property="refundRemark" />
+    <result column="refund_image_1" jdbcType="VARCHAR" property="refundImage1" />
+    <result column="refund_image_2" jdbcType="VARCHAR" property="refundImage2" />
+    <result column="refund_image_3" jdbcType="VARCHAR" property="refundImage3" />
+    <result column="refund_status" jdbcType="INTEGER" property="refundStatus" />
+  </resultMap>
+</mapper>

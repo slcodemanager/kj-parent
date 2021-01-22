@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.MchBranchCouponTimeSlotMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.MchBranchCouponTimeSlot">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="branch_id" jdbcType="VARCHAR" property="branchId" />
+    <result column="coupon_type" jdbcType="INTEGER" property="couponType" />
+    <result column="caption" jdbcType="VARCHAR" property="caption" />
+    <result column="start_time" jdbcType="TIME" property="startTime" />
+    <result column="end_time" jdbcType="TIME" property="endTime" />
+    <result column="refund_limit" jdbcType="TIME" property="refundLimit" />
+    <result column="template_id" jdbcType="INTEGER" property="templateId" />
+  </resultMap>
+</mapper>

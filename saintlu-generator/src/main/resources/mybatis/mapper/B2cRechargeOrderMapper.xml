@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.B2cRechargeOrderMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.B2cRechargeOrder">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="m_id" jdbcType="VARCHAR" property="mId" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="remarks" jdbcType="VARCHAR" property="remarks" />
+    <result column="pay_status" jdbcType="INTEGER" property="payStatus" />
+    <result column="add_time" jdbcType="TIMESTAMP" property="addTime" />
+    <result column="end_time" jdbcType="TIMESTAMP" property="endTime" />
+    <result column="slip_number" jdbcType="VARCHAR" property="slipNumber" />
+    <result column="transaction_id" jdbcType="VARCHAR" property="transactionId" />
+    <result column="pre_pay_id" jdbcType="VARCHAR" property="prePayId" />
+    <result column="pay_method" jdbcType="VARCHAR" property="payMethod" />
+    <result column="pay_time" jdbcType="TIMESTAMP" property="payTime" />
+    <result column="recharge_id" jdbcType="INTEGER" property="rechargeId" />
+  </resultMap>
+</mapper>

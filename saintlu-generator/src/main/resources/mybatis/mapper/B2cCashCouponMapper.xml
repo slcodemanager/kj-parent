@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.B2cCashCouponMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.B2cCashCoupon">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="auto_id" jdbcType="INTEGER" property="autoId" />
+    <result column="ID" jdbcType="VARCHAR" property="id" />
+    <result column="m_id" jdbcType="VARCHAR" property="mId" />
+    <result column="order_id" jdbcType="VARCHAR" property="orderId" />
+    <result column="order_slip_number" jdbcType="VARCHAR" property="orderSlipNumber" />
+    <result column="p_id" jdbcType="INTEGER" property="pId" />
+    <result column="p_idx" jdbcType="INTEGER" property="pIdx" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="is_used" jdbcType="TINYINT" property="isUsed" />
+    <result column="coupon_start_time" jdbcType="TIMESTAMP" property="couponStartTime" />
+    <result column="coupon_end_time" jdbcType="TIMESTAMP" property="couponEndTime" />
+    <result column="add_time" jdbcType="TIMESTAMP" property="addTime" />
+    <result column="code" jdbcType="VARCHAR" property="code" />
+    <result column="use_time" jdbcType="TIMESTAMP" property="useTime" />
+    <result column="use_admin_id" jdbcType="VARCHAR" property="useAdminId" />
+    <result column="coupon_notice" jdbcType="VARCHAR" property="couponNotice" />
+    <result column="write_off_time" jdbcType="TIMESTAMP" property="writeOffTime" />
+    <result column="write_off_admin_id" jdbcType="INTEGER" property="writeOffAdminId" />
+    <result column="write_off_total_price" jdbcType="DECIMAL" property="writeOffTotalPrice" />
+    <result column="write_off_no_discount_price" jdbcType="DECIMAL" property="writeOffNoDiscountPrice" />
+    <result column="write_off_discount_price" jdbcType="DECIMAL" property="writeOffDiscountPrice" />
+    <result column="write_off_pay_price" jdbcType="DECIMAL" property="writeOffPayPrice" />
+  </resultMap>
+</mapper>

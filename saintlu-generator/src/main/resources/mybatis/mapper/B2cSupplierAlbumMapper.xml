@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.B2cSupplierAlbumMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.B2cSupplierAlbum">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="supplier_id" jdbcType="INTEGER" property="supplierId" />
+    <result column="image_url" jdbcType="VARCHAR" property="imageUrl" />
+    <result column="add_time" jdbcType="TIMESTAMP" property="addTime" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+  </resultMap>
+</mapper>

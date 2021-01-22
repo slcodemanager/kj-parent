@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.MchBranchOrderMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.MchBranchOrder">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="auto_id" jdbcType="INTEGER" property="autoId" />
+    <result column="id" jdbcType="VARCHAR" property="id" />
+    <result column="m_id" jdbcType="VARCHAR" property="mId" />
+    <result column="mch_id" jdbcType="VARCHAR" property="mchId" />
+    <result column="branch_id" jdbcType="VARCHAR" property="branchId" />
+    <result column="amount" jdbcType="INTEGER" property="amount" />
+    <result column="pay_price" jdbcType="DECIMAL" property="payPrice" />
+    <result column="product_price" jdbcType="DECIMAL" property="productPrice" />
+    <result column="express_price" jdbcType="DECIMAL" property="expressPrice" />
+    <result column="address_province" jdbcType="VARCHAR" property="addressProvince" />
+    <result column="address_city" jdbcType="VARCHAR" property="addressCity" />
+    <result column="address_district" jdbcType="VARCHAR" property="addressDistrict" />
+    <result column="address_detail" jdbcType="VARCHAR" property="addressDetail" />
+    <result column="contact_number" jdbcType="VARCHAR" property="contactNumber" />
+    <result column="contact_name" jdbcType="VARCHAR" property="contactName" />
+    <result column="remarks" jdbcType="VARCHAR" property="remarks" />
+    <result column="pay_status" jdbcType="INTEGER" property="payStatus" />
+    <result column="slip_number" jdbcType="VARCHAR" property="slipNumber" />
+    <result column="transaction_id" jdbcType="VARCHAR" property="transactionId" />
+    <result column="pre_pay_id" jdbcType="VARCHAR" property="prePayId" />
+    <result column="pay_method" jdbcType="VARCHAR" property="payMethod" />
+    <result column="pay_time" jdbcType="TIMESTAMP" property="payTime" />
+    <result column="express_number" jdbcType="VARCHAR" property="expressNumber" />
+    <result column="express_status" jdbcType="INTEGER" property="expressStatus" />
+    <result column="membership_order" jdbcType="INTEGER" property="membershipOrder" />
+    <result column="add_time" jdbcType="TIMESTAMP" property="addTime" />
+    <result column="end_time" jdbcType="TIMESTAMP" property="endTime" />
+  </resultMap>
+</mapper>

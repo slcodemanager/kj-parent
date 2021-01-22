@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.ParkingInputInfoMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.ParkingInputInfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="car_no" jdbcType="VARCHAR" property="carNo" />
+    <result column="ADD_TIME" jdbcType="TIMESTAMP" property="addTime" />
+    <result column="favTimeBalance" jdbcType="INTEGER" property="favtimebalance" />
+  </resultMap>
+</mapper>

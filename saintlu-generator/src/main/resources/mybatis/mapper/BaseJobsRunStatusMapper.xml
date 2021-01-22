@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.BaseJobsRunStatusMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.BaseJobsRunStatus">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="code" jdbcType="VARCHAR" property="code" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="last_run_date" jdbcType="VARCHAR" property="lastRunDate" />
+    <result column="last_run_time" jdbcType="VARCHAR" property="lastRunTime" />
+    <result column="last_run_use_time" jdbcType="CHAR" property="lastRunUseTime" />
+    <result column="last_run_state" jdbcType="VARCHAR" property="lastRunState" />
+    <result column="last_run_message" jdbcType="VARCHAR" property="lastRunMessage" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="temp1" jdbcType="VARCHAR" property="temp1" />
+    <result column="temp2" jdbcType="VARCHAR" property="temp2" />
+    <result column="temp3" jdbcType="VARCHAR" property="temp3" />
+    <result column="temp4" jdbcType="VARCHAR" property="temp4" />
+    <result column="temp5" jdbcType="VARCHAR" property="temp5" />
+  </resultMap>
+</mapper>

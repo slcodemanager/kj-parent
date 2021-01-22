@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.MchMerchantMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.MchMerchant">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="mch_id" jdbcType="VARCHAR" property="mchId" />
+    <result column="region_id" jdbcType="INTEGER" property="regionId" />
+    <result column="mch_name" jdbcType="VARCHAR" property="mchName" />
+    <result column="mch_code" jdbcType="VARCHAR" property="mchCode" />
+    <result column="mch_mobile" jdbcType="VARCHAR" property="mchMobile" />
+    <result column="logo_img" jdbcType="VARCHAR" property="logoImg" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="reviewed" jdbcType="INTEGER" property="reviewed" />
+    <result column="add_time" jdbcType="TIMESTAMP" property="addTime" />
+    <result column="agent_admin_id" jdbcType="INTEGER" property="agentAdminId" />
+    <result column="contact_name" jdbcType="VARCHAR" property="contactName" />
+    <result column="contact_phone" jdbcType="VARCHAR" property="contactPhone" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="contract_begin_date" jdbcType="VARCHAR" property="contractBeginDate" />
+    <result column="contract_end_date" jdbcType="VARCHAR" property="contractEndDate" />
+    <result column="contract_date" jdbcType="VARCHAR" property="contractDate" />
+    <result column="certify_img" jdbcType="VARCHAR" property="certifyImg" />
+    <result column="contract_img" jdbcType="VARCHAR" property="contractImg" />
+    <result column="admin_id" jdbcType="INTEGER" property="adminId" />
+  </resultMap>
+</mapper>

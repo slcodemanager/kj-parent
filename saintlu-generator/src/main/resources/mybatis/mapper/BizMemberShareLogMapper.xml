@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.BizMemberShareLogMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.BizMemberShareLog">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="merchant_id" jdbcType="INTEGER" property="merchantId" />
+    <result column="member_id" jdbcType="INTEGER" property="memberId" />
+    <result column="share_time" jdbcType="TIMESTAMP" property="shareTime" />
+    <result column="share_type" jdbcType="VARCHAR" property="shareType" />
+    <result column="share_open_count" jdbcType="INTEGER" property="shareOpenCount" />
+    <result column="share_sign_in_count" jdbcType="INTEGER" property="shareSignInCount" />
+    <result column="share_deal_count" jdbcType="INTEGER" property="shareDealCount" />
+  </resultMap>
+</mapper>

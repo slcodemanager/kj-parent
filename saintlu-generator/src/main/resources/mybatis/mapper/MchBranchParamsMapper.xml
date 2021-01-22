@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.MchBranchParamsMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.MchBranchParams">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="param_name" jdbcType="VARCHAR" property="paramName" />
+    <id column="branch_id" jdbcType="VARCHAR" property="branchId" />
+    <result column="param_value" jdbcType="VARCHAR" property="paramValue" />
+    <result column="param_remark" jdbcType="VARCHAR" property="paramRemark" />
+  </resultMap>
+</mapper>

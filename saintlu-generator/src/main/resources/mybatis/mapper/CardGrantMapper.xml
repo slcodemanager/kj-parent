@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.CardGrantMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.CardGrant">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="activity_name" jdbcType="VARCHAR" property="activityName" />
+    <result column="begin_date" jdbcType="DATE" property="beginDate" />
+    <result column="end_date" jdbcType="DATE" property="endDate" />
+    <result column="grant_obj" jdbcType="VARCHAR" property="grantObj" />
+    <result column="grant_type" jdbcType="VARCHAR" property="grantType" />
+    <result column="grant_number" jdbcType="INTEGER" property="grantNumber" />
+    <result column="transfer" jdbcType="VARCHAR" property="transfer" />
+    <result column="branch_id" jdbcType="VARCHAR" property="branchId" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="receive_limit" jdbcType="INTEGER" property="receiveLimit" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="notice" jdbcType="VARCHAR" property="notice" />
+    <result column="logo" jdbcType="VARCHAR" property="logo" />
+    <result column="card_type" jdbcType="VARCHAR" property="cardType" />
+    <result column="discount" jdbcType="DOUBLE" property="discount" />
+    <result column="reduce_target" jdbcType="DOUBLE" property="reduceTarget" />
+    <result column="reduce_subtraction" jdbcType="DOUBLE" property="reduceSubtraction" />
+  </resultMap>
+</mapper>

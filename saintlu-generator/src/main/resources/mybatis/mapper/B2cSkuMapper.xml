@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.B2cSkuMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.B2cSku">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="p_id" jdbcType="INTEGER" property="pId" />
+    <result column="spec_1" jdbcType="VARCHAR" property="spec1" />
+    <result column="spec_2" jdbcType="VARCHAR" property="spec2" />
+    <result column="image_url" jdbcType="VARCHAR" property="imageUrl" />
+    <result column="caption" jdbcType="VARCHAR" property="caption" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="stock" jdbcType="INTEGER" property="stock" />
+    <result column="add_time" jdbcType="TIMESTAMP" property="addTime" />
+    <result column="upd_time" jdbcType="TIMESTAMP" property="updTime" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+  </resultMap>
+</mapper>

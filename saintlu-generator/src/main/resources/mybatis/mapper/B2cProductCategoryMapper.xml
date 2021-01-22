@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.B2cProductCategoryMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.B2cProductCategory">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="caption" jdbcType="VARCHAR" property="caption" />
+    <result column="order_num" jdbcType="INTEGER" property="orderNum" />
+    <result column="add_time" jdbcType="TIMESTAMP" property="addTime" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="show_dot" jdbcType="INTEGER" property="showDot" />
+    <result column="show_info" jdbcType="VARCHAR" property="showInfo" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="owner" jdbcType="VARCHAR" property="owner" />
+    <result column="show_color" jdbcType="VARCHAR" property="showColor" />
+  </resultMap>
+</mapper>

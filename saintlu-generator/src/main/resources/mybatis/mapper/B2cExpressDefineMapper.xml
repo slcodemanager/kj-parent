@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.B2cExpressDefineMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.B2cExpressDefine">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="branch_id" jdbcType="VARCHAR" property="branchId" />
+    <result column="distance_limit_b" jdbcType="DECIMAL" property="distanceLimitB" />
+    <result column="distance_limit_e" jdbcType="DECIMAL" property="distanceLimitE" />
+    <result column="order_price_limit" jdbcType="DECIMAL" property="orderPriceLimit" />
+    <result column="express_add" jdbcType="INTEGER" property="expressAdd" />
+    <result column="express_price" jdbcType="DECIMAL" property="expressPrice" />
+    <result column="express_join" jdbcType="INTEGER" property="expressJoin" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+  </resultMap>
+</mapper>

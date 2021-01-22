@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.BasePermissionsMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.BasePermissions">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="AID" jdbcType="INTEGER" property="aid" />
+    <result column="CONTROLLER_NAME" jdbcType="VARCHAR" property="controllerName" />
+    <result column="ACTION_NAME" jdbcType="VARCHAR" property="actionName" />
+    <result column="PARAMETER_NAME" jdbcType="VARCHAR" property="parameterName" />
+    <result column="PARAMETER_VALUE" jdbcType="VARCHAR" property="parameterValue" />
+    <result column="IS_DELETE" jdbcType="BIT" property="isDelete" />
+  </resultMap>
+</mapper>

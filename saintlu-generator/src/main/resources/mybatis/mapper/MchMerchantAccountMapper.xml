@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.MchMerchantAccountMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.MchMerchantAccount">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="id" jdbcType="BIGINT" property="id" />
+    <result column="mch_code" jdbcType="VARCHAR" property="mchCode" />
+    <result column="wx_open_id" jdbcType="VARCHAR" property="wxOpenId" />
+    <result column="code_url" jdbcType="VARCHAR" property="codeUrl" />
+    <result column="proportion" jdbcType="DOUBLE" property="proportion" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="nick_name" jdbcType="VARCHAR" property="nickName" />
+  </resultMap>
+</mapper>

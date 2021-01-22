@@ -45,3 +45,13 @@ pagehelper:
   supportMethodsArguments: true
   params: count=countSql
 
+wx:
+  appId:
+  appSecret:
+  apiKey:
+  mchId:
+  notify:
+  payUrl: https://api.mch.weixin.qq.com/pay/unifiedorder
+
+
+

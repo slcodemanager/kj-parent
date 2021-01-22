@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.MchVerifyCodeMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.MchVerifyCode">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="verify_code" jdbcType="VARCHAR" property="verifyCode" />
+    <result column="order_id" jdbcType="VARCHAR" property="orderId" />
+    <result column="shop_id" jdbcType="BIGINT" property="shopId" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="owner" jdbcType="VARCHAR" property="owner" />
+    <result column="verify_price" jdbcType="DECIMAL" property="verifyPrice" />
+    <result column="verify_id" jdbcType="VARCHAR" property="verifyId" />
+    <result column="mch_brand_id" jdbcType="VARCHAR" property="mchBrandId" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="end_time" jdbcType="TIMESTAMP" property="endTime" />
+    <result column="reach_time" jdbcType="TIMESTAMP" property="reachTime" />
+    <result column="pay_status" jdbcType="INTEGER" property="payStatus" />
+    <result column="expire_time" jdbcType="TIMESTAMP" property="expireTime" />
+    <result column="slip_number" jdbcType="VARCHAR" property="slipNumber" />
+  </resultMap>
+</mapper>

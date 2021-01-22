@@ -1,4 +1,4 @@
-package com.saintlu.common.utils;
+package com.kj.common.utils;
 
 import java.security.MessageDigest;
 

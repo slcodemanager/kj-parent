@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.BizMerchantJoinMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.BizMerchantJoin">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="mch_name" jdbcType="VARCHAR" property="mchName" />
+    <result column="m_id" jdbcType="VARCHAR" property="mId" />
+    <result column="open_id" jdbcType="VARCHAR" property="openId" />
+    <result column="c_name" jdbcType="VARCHAR" property="cName" />
+    <result column="c_phone" jdbcType="VARCHAR" property="cPhone" />
+    <result column="c_address" jdbcType="VARCHAR" property="cAddress" />
+    <result column="c_remark" jdbcType="VARCHAR" property="cRemark" />
+    <result column="c_text" jdbcType="VARCHAR" property="cText" />
+    <result column="add_time" jdbcType="TIMESTAMP" property="addTime" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.RegionMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.Region">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="CODE" jdbcType="VARCHAR" property="code" />
+    <result column="PARENT_CODE" jdbcType="VARCHAR" property="parentCode" />
+    <result column="REGION_NAME" jdbcType="VARCHAR" property="regionName" />
+    <result column="REGION_TYPE" jdbcType="INTEGER" property="regionType" />
+    <result column="ABBNAME" jdbcType="VARCHAR" property="abbname" />
+    <result column="ZIP" jdbcType="VARCHAR" property="zip" />
+  </resultMap>
+</mapper>

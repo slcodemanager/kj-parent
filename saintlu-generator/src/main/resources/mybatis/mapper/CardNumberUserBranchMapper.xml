@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.CardNumberUserBranchMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.CardNumberUserBranch">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="branch_id" jdbcType="VARCHAR" property="branchId" />
+    <result column="card_number" jdbcType="VARCHAR" property="cardNumber" />
+    <result column="receive_date" jdbcType="TIMESTAMP" property="receiveDate" />
+    <result column="use_date" jdbcType="TIMESTAMP" property="useDate" />
+  </resultMap>
+</mapper>

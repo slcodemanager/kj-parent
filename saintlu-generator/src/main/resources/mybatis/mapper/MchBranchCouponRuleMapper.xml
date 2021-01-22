@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.MchBranchCouponRuleMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.MchBranchCouponRule">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="branch_id" jdbcType="VARCHAR" property="branchId" />
+    <result column="rule_tips" jdbcType="VARCHAR" property="ruleTips" />
+    <result column="rule_decs" jdbcType="VARCHAR" property="ruleDecs" />
+    <result column="add_time" jdbcType="TIMESTAMP" property="addTime" />
+  </resultMap>
+</mapper>

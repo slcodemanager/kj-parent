@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.BizVoucherReserveMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.BizVoucherReserve">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="SERIAL_NUMBER" jdbcType="VARCHAR" property="serialNumber" />
+    <result column="TID" jdbcType="INTEGER" property="tid" />
+    <result column="MID" jdbcType="INTEGER" property="mid" />
+    <result column="DUE_TIME" jdbcType="TIMESTAMP" property="dueTime" />
+    <result column="IS_USE" jdbcType="BIT" property="isUse" />
+    <result column="USE_TIME" jdbcType="TIMESTAMP" property="useTime" />
+    <result column="AID" jdbcType="INTEGER" property="aid" />
+    <result column="ADD_TIME" jdbcType="TIMESTAMP" property="addTime" />
+    <result column="IS_REMIND" jdbcType="INTEGER" property="isRemind" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.AutoGrantCouponMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.AutoGrantCoupon">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="mch_id" jdbcType="VARCHAR" property="mchId" />
+    <result column="coupon_total" jdbcType="BIGINT" property="couponTotal" />
+    <result column="time" jdbcType="BIGINT" property="time" />
+  </resultMap>
+</mapper>

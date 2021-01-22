@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.MchMerchantAdminMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.MchMerchantAdmin">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="mch_id" jdbcType="VARCHAR" property="mchId" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="nick_name" jdbcType="VARCHAR" property="nickName" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="avatar_url" jdbcType="VARCHAR" property="avatarUrl" />
+    <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+    <result column="wx_open_id" jdbcType="VARCHAR" property="wxOpenId" />
+    <result column="add_time" jdbcType="TIMESTAMP" property="addTime" />
+    <result column="last_update_time" jdbcType="TIMESTAMP" property="lastUpdateTime" />
+    <result column="last_login_ip" jdbcType="VARCHAR" property="lastLoginIp" />
+    <result column="last_login_time" jdbcType="TIMESTAMP" property="lastLoginTime" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="verify_code" jdbcType="VARCHAR" property="verifyCode" />
+  </resultMap>
+</mapper>

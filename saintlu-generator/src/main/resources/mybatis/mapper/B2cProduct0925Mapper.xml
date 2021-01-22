@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.B2cProduct0925Mapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.B2cProduct0925">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="caption" jdbcType="VARCHAR" property="caption" />
+    <result column="category" jdbcType="VARCHAR" property="category" />
+    <result column="category_sub" jdbcType="VARCHAR" property="categorySub" />
+    <result column="simple_desc" jdbcType="VARCHAR" property="simpleDesc" />
+    <result column="specs" jdbcType="VARCHAR" property="specs" />
+    <result column="tips" jdbcType="VARCHAR" property="tips" />
+    <result column="watch_word" jdbcType="VARCHAR" property="watchWord" />
+    <result column="branch_id" jdbcType="VARCHAR" property="branchId" />
+    <result column="origin_price" jdbcType="DECIMAL" property="originPrice" />
+    <result column="cash_coupon_money" jdbcType="DECIMAL" property="cashCouponMoney" />
+    <result column="deduct_coupon_price" jdbcType="DECIMAL" property="deductCouponPrice" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="image_url" jdbcType="VARCHAR" property="imageUrl" />
+    <result column="share_image" jdbcType="VARCHAR" property="shareImage" />
+    <result column="share_image_url" jdbcType="VARCHAR" property="shareImageUrl" />
+    <result column="sell_count" jdbcType="INTEGER" property="sellCount" />
+    <result column="visit_count" jdbcType="INTEGER" property="visitCount" />
+    <result column="tag" jdbcType="VARCHAR" property="tag" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="order_num" jdbcType="INTEGER" property="orderNum" />
+    <result column="stock" jdbcType="INTEGER" property="stock" />
+    <result column="express_price" jdbcType="DECIMAL" property="expressPrice" />
+    <result column="item_number" jdbcType="VARCHAR" property="itemNumber" />
+    <result column="item_supplier" jdbcType="VARCHAR" property="itemSupplier" />
+    <result column="spec_1_title" jdbcType="VARCHAR" property="spec1Title" />
+    <result column="spec_2_title" jdbcType="VARCHAR" property="spec2Title" />
+    <result column="add_time" jdbcType="TIMESTAMP" property="addTime" />
+    <result column="activity_id" jdbcType="VARCHAR" property="activityId" />
+    <result column="is_flash" jdbcType="INTEGER" property="isFlash" />
+    <result column="shop_id" jdbcType="INTEGER" property="shopId" />
+    <result column="owner" jdbcType="VARCHAR" property="owner" />
+  </resultMap>
+</mapper>

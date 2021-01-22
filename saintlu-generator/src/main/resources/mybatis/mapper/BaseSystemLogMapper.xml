@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.BaseSystemLogMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.BaseSystemLog">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="Model" jdbcType="VARCHAR" property="model" />
+    <result column="OID" jdbcType="INTEGER" property="oid" />
+    <result column="OperType" jdbcType="VARCHAR" property="opertype" />
+    <result column="OContent" jdbcType="VARCHAR" property="ocontent" />
+    <result column="addtime" jdbcType="TIMESTAMP" property="addtime" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+  </resultMap>
+</mapper>

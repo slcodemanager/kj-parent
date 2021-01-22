@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.MchBranchCartMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.MchBranchCart">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="m_id" jdbcType="VARCHAR" property="mId" />
+    <result column="p_id" jdbcType="INTEGER" property="pId" />
+    <result column="amount" jdbcType="INTEGER" property="amount" />
+    <result column="sku_id" jdbcType="INTEGER" property="skuId" />
+    <result column="sku_tips" jdbcType="VARCHAR" property="skuTips" />
+    <result column="add_time" jdbcType="TIMESTAMP" property="addTime" />
+  </resultMap>
+</mapper>

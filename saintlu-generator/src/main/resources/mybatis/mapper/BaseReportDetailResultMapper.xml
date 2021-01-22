@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.BaseReportDetailResultMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.BaseReportDetailResult">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="r_id" jdbcType="VARCHAR" property="rId" />
+    <result column="label" jdbcType="VARCHAR" property="label" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="display" jdbcType="VARCHAR" property="display" />
+    <result column="width" jdbcType="VARCHAR" property="width" />
+    <result column="formatter" jdbcType="VARCHAR" property="formatter" />
+    <result column="isStat" jdbcType="INTEGER" property="isstat" />
+  </resultMap>
+</mapper>

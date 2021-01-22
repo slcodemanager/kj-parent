@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.BaseMenuMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.BaseMenu">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="icon_url" jdbcType="VARCHAR" property="iconUrl" />
+    <result column="controller_name" jdbcType="VARCHAR" property="controllerName" />
+    <result column="action_name" jdbcType="VARCHAR" property="actionName" />
+    <result column="order_num" jdbcType="INTEGER" property="orderNum" />
+  </resultMap>
+</mapper>

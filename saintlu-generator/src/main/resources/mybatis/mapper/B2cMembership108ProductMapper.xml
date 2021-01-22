@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.B2cMembership108ProductMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.B2cMembership108Product">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="group_title" jdbcType="VARCHAR" property="groupTitle" />
+    <result column="pids" jdbcType="VARCHAR" property="pids" />
+  </resultMap>
+</mapper>

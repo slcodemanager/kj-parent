@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.ApiTencentLbsGeocoderMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.ApiTencentLbsGeocoder">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="api_key" jdbcType="VARCHAR" property="apiKey" />
+    <result column="call_date" jdbcType="DATE" property="callDate" />
+    <result column="call_time" jdbcType="TIMESTAMP" property="callTime" />
+    <result column="params" jdbcType="VARCHAR" property="params" />
+    <result column="ret_code" jdbcType="VARCHAR" property="retCode" />
+    <result column="ret_content" jdbcType="VARCHAR" property="retContent" />
+    <result column="ret_message" jdbcType="VARCHAR" property="retMessage" />
+  </resultMap>
+</mapper>

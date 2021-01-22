@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.BizMemberPopularLogMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.BizMemberPopularLog">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="auto_id" jdbcType="INTEGER" property="autoId" />
+    <result column="m_id" jdbcType="VARCHAR" property="mId" />
+    <result column="popular_type" jdbcType="VARCHAR" property="popularType" />
+    <result column="tips" jdbcType="VARCHAR" property="tips" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="add_time" jdbcType="TIMESTAMP" property="addTime" />
+    <result column="add_date" jdbcType="TIMESTAMP" property="addDate" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="balance" jdbcType="DECIMAL" property="balance" />
+  </resultMap>
+</mapper>

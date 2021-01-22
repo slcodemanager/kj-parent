@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.B2cOrderTimeoutMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.B2cOrderTimeout">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="auto_id" jdbcType="INTEGER" property="autoId" />
+    <result column="id" jdbcType="VARCHAR" property="id" />
+    <result column="m_id" jdbcType="VARCHAR" property="mId" />
+    <result column="amount" jdbcType="INTEGER" property="amount" />
+    <result column="coupon_status" jdbcType="INTEGER" property="couponStatus" />
+    <result column="coupon_type" jdbcType="VARCHAR" property="couponType" />
+    <result column="coupon_price" jdbcType="DECIMAL" property="couponPrice" />
+    <result column="pay_price" jdbcType="DECIMAL" property="payPrice" />
+    <result column="discount_price" jdbcType="DECIMAL" property="discountPrice" />
+    <result column="product_price" jdbcType="DECIMAL" property="productPrice" />
+    <result column="return_price" jdbcType="DECIMAL" property="returnPrice" />
+    <result column="express_price" jdbcType="DECIMAL" property="expressPrice" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="address_distance" jdbcType="DECIMAL" property="addressDistance" />
+    <result column="address_lat" jdbcType="DECIMAL" property="addressLat" />
+    <result column="address_lng" jdbcType="DECIMAL" property="addressLng" />
+    <result column="address_province" jdbcType="VARCHAR" property="addressProvince" />
+    <result column="address_city" jdbcType="VARCHAR" property="addressCity" />
+    <result column="address_district" jdbcType="VARCHAR" property="addressDistrict" />
+    <result column="address_detail" jdbcType="VARCHAR" property="addressDetail" />
+    <result column="contact_number" jdbcType="VARCHAR" property="contactNumber" />
+    <result column="contact_name" jdbcType="VARCHAR" property="contactName" />
+    <result column="remarks" jdbcType="VARCHAR" property="remarks" />
+    <result column="pay_status" jdbcType="INTEGER" property="payStatus" />
+    <result column="add_time" jdbcType="TIMESTAMP" property="addTime" />
+    <result column="end_time" jdbcType="TIMESTAMP" property="endTime" />
+    <result column="slip_number" jdbcType="VARCHAR" property="slipNumber" />
+    <result column="transaction_id" jdbcType="VARCHAR" property="transactionId" />
+    <result column="pre_pay_id" jdbcType="VARCHAR" property="prePayId" />
+    <result column="pay_method" jdbcType="VARCHAR" property="payMethod" />
+    <result column="pay_time" jdbcType="TIMESTAMP" property="payTime" />
+    <result column="express_number" jdbcType="VARCHAR" property="expressNumber" />
+    <result column="express_status" jdbcType="INTEGER" property="expressStatus" />
+    <result column="express_name" jdbcType="VARCHAR" property="expressName" />
+    <result column="membership_order" jdbcType="INTEGER" property="membershipOrder" />
+    <result column="refund_status" jdbcType="INTEGER" property="refundStatus" />
+    <result column="pick_up_type" jdbcType="VARCHAR" property="pickUpType" />
+    <result column="owner" jdbcType="VARCHAR" property="owner" />
+    <result column="owner_branch_id" jdbcType="VARCHAR" property="ownerBranchId" />
+    <result column="order_type" jdbcType="VARCHAR" property="orderType" />
+    <result column="shop_id" jdbcType="INTEGER" property="shopId" />
+    <result column="comment_status" jdbcType="INTEGER" property="commentStatus" />
+  </resultMap>
+</mapper>

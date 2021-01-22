@@ -76,7 +76,7 @@
         </javaClientGenerator>
 
         <!--可以指定数据库中的某个表，%表示所有表-->
-        <table tableName="%" >
+        <table tableName="k_user_address" >
             <!--<generatedKey column="user_id" sqlStatement="Mysql" identity="true"/>-->
         </table>
 

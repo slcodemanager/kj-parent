@@ -1,4 +1,4 @@
-package com.saintlu.common.utils;
+package com.kj.common.utils;
 
 
 import com.alibaba.fastjson.JSONObject;
@@ -26,6 +26,21 @@ import java.util.*;
  */
 
 public class WxUtil {
+
+    public static String parseResultForWX(boolean success) {
+        if (success) {
+            Map<String, String> result = new HashMap<String, String>();
+            result.put("return_code", "<![CDATA[SUCCESS]]>");
+            result.put("return_msg", "<![CDATA[OK]]>");
+            return WxUtil.mapToXML(result);
+        } else {
+            Map<String, String> result = new HashMap<String, String>();
+            result.put("return_code", "<![CDATA[FAIL]]>");
+            result.put("return_msg", "<![CDATA[FAIL]]>");
+            return WxUtil.mapToXML(result);
+        }
+    }
+
     public static String getNonceStr() {
         Random random = new Random();
         return MD5Util.MD5Encode(String.valueOf(random.nextInt(10000)), "GBK");
@@ -79,12 +94,12 @@ public class WxUtil {
      * @throws JDOMException
      * @throws IOException
      */
-    public static Map doXMLParse(String strxml) throws JDOMException, IOException {
+    public static Map<String,String> doXMLParse(String strxml) throws JDOMException, IOException {
         strxml = strxml.replaceFirst("encoding=\".*\"", "encoding=\"UTF-8\"");
 
         if (StringUtils.isBlank(strxml)) return null;
 
-        Map m = new HashMap();
+        Map<String,String> m = new HashMap<>();
         InputStream in = new ByteArrayInputStream(strxml.getBytes("UTF-8"));
         SAXBuilder builder = new SAXBuilder();
         Document doc = builder.build(in);
@@ -134,5 +149,42 @@ public class WxUtil {
         }
         return sb.toString();
     }
+
+    public static String mapToXML(Map map) {
+        StringBuffer sb = new StringBuffer();
+        Set set = map.keySet();
+        Iterator it = set.iterator();
+
+        while (true) {
+            while (it.hasNext()) {
+                String key = (String) it.next();
+                Object value = map.get(key);
+                if (null == value) {
+                    value = "";
+                }
+
+                if (value.getClass().getName().equals("java.util.ArrayList")) {
+                    ArrayList list = (ArrayList) map.get(key);
+                    sb.append("<" + key + ">");
+
+                    for (int i = 0; i < list.size(); ++i) {
+                        HashMap hm = (HashMap) list.get(i);
+                        sb.append(mapToXML(hm));
+                    }
+
+                    sb.append("</" + key + ">");
+                } else if (value instanceof HashMap) {
+                    sb.append("<" + key + ">");
+                    sb.append(mapToXML((HashMap) value));
+                    sb.append("</" + key + ">");
+                } else {
+                    sb.append("<" + key + ">" + value + "</" + key + ">");
+                }
+            }
+
+            return sb.toString();
+        }
+    }
+
 
 }

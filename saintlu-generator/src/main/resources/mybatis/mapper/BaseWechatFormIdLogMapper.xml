@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.BaseWechatFormIdLogMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.BaseWechatFormIdLog">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="FORM_ID" jdbcType="VARCHAR" property="formId" />
+    <result column="OPEN_ID" jdbcType="VARCHAR" property="openId" />
+    <result column="module" jdbcType="VARCHAR" property="module" />
+    <result column="MID" jdbcType="INTEGER" property="mid" />
+    <result column="USENUM" jdbcType="INTEGER" property="usenum" />
+    <result column="TYPE" jdbcType="INTEGER" property="type" />
+    <result column="SOURCE" jdbcType="VARCHAR" property="source" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+</mapper>

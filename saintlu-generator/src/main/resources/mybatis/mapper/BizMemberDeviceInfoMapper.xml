@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.BizMemberDeviceInfoMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.BizMemberDeviceInfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="member_id" jdbcType="INTEGER" property="memberId" />
+    <result column="MOBILE_DEVICE_NUMBER" jdbcType="VARCHAR" property="mobileDeviceNumber" />
+    <result column="ADD_TIME" jdbcType="TIMESTAMP" property="addTime" />
+    <result column="LOGIN_WAY" jdbcType="INTEGER" property="loginWay" />
+  </resultMap>
+</mapper>

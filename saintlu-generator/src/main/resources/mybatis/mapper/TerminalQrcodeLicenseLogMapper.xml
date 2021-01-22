@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.TerminalQrcodeLicenseLogMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.TerminalQrcodeLicenseLog">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="venueCode" jdbcType="VARCHAR" property="venuecode" />
+    <result column="CONTENT" jdbcType="VARCHAR" property="content" />
+    <result column="IS_USE" jdbcType="TINYINT" property="isUse" />
+    <result column="GMT_CREATE" jdbcType="TIMESTAMP" property="gmtCreate" />
+    <result column="GMT_MODIFY" jdbcType="TIMESTAMP" property="gmtModify" />
+  </resultMap>
+</mapper>

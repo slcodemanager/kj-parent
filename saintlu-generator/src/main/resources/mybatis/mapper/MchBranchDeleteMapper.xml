@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.MchBranchDeleteMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.MchBranchDelete">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="auto_id" jdbcType="INTEGER" property="autoId" />
+    <result column="branch_id" jdbcType="VARCHAR" property="branchId" />
+    <result column="mch_id" jdbcType="VARCHAR" property="mchId" />
+    <result column="region_id" jdbcType="INTEGER" property="regionId" />
+    <result column="branch_name" jdbcType="VARCHAR" property="branchName" />
+    <result column="category" jdbcType="VARCHAR" property="category" />
+    <result column="open_hours" jdbcType="VARCHAR" property="openHours" />
+    <result column="per_price" jdbcType="DOUBLE" property="perPrice" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="contact_phone" jdbcType="VARCHAR" property="contactPhone" />
+    <result column="province" jdbcType="VARCHAR" property="province" />
+    <result column="city" jdbcType="VARCHAR" property="city" />
+    <result column="district" jdbcType="VARCHAR" property="district" />
+    <result column="summary" jdbcType="VARCHAR" property="summary" />
+    <result column="lng" jdbcType="DECIMAL" property="lng" />
+    <result column="lat" jdbcType="DECIMAL" property="lat" />
+    <result column="logo_img" jdbcType="VARCHAR" property="logoImg" />
+    <result column="train_img" jdbcType="VARCHAR" property="trainImg" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="reviewed" jdbcType="INTEGER" property="reviewed" />
+    <result column="total_score" jdbcType="DOUBLE" property="totalScore" />
+    <result column="tag" jdbcType="VARCHAR" property="tag" />
+    <result column="add_time" jdbcType="TIMESTAMP" property="addTime" />
+    <result column="label" jdbcType="VARCHAR" property="label" />
+    <result column="discount" jdbcType="DOUBLE" property="discount" />
+    <result column="remain_amount" jdbcType="INTEGER" property="remainAmount" />
+    <result column="order_num" jdbcType="INTEGER" property="orderNum" />
+    <result column="popularity" jdbcType="INTEGER" property="popularity" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="biz_admin_id" jdbcType="INTEGER" property="bizAdminId" />
+    <result column="share_code_url" jdbcType="VARCHAR" property="shareCodeUrl" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="shop_id" jdbcType="INTEGER" property="shopId" />
+  </resultMap>
+</mapper>

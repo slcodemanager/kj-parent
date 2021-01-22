@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.MchBranchCouponMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.MchBranchCoupon">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="branch_id" jdbcType="VARCHAR" property="branchId" />
+    <result column="time_slot_id" jdbcType="INTEGER" property="timeSlotId" />
+    <result column="region_id" jdbcType="INTEGER" property="regionId" />
+    <result column="coupon_type" jdbcType="INTEGER" property="couponType" />
+    <result column="coupon_caption" jdbcType="VARCHAR" property="couponCaption" />
+    <result column="coupon_date" jdbcType="DATE" property="couponDate" />
+    <result column="remainder" jdbcType="INTEGER" property="remainder" />
+    <result column="total" jdbcType="INTEGER" property="total" />
+    <result column="used" jdbcType="INTEGER" property="used" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="caption" jdbcType="VARCHAR" property="caption" />
+    <result column="add_time" jdbcType="TIMESTAMP" property="addTime" />
+    <result column="rule_decs" jdbcType="VARCHAR" property="ruleDecs" />
+    <result column="rule_tips" jdbcType="VARCHAR" property="ruleTips" />
+    <result column="start_time" jdbcType="TIME" property="startTime" />
+    <result column="end_time" jdbcType="TIME" property="endTime" />
+    <result column="refund_limit" jdbcType="TIME" property="refundLimit" />
+  </resultMap>
+</mapper>

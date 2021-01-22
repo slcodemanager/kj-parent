@@ -46,7 +46,7 @@ public class KProduct implements Serializable {
     private BigDecimal rebate;
 
     /**
-     * 原材料价格
+     * 邮寄费用
      */
     @Column(name = "materials_price")
     private BigDecimal materialsPrice;

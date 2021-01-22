@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.MchCouponDefineMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.MchCouponDefine">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="ID" jdbcType="INTEGER" property="id" />
+    <result column="coupon_caption" jdbcType="VARCHAR" property="couponCaption" />
+    <result column="add_time" jdbcType="TIMESTAMP" property="addTime" />
+    <result column="price" jdbcType="DECIMAL" property="price" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="discount" jdbcType="DOUBLE" property="discount" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.saintlu.generator.mapper.B2cSupplierMapper">
+  <resultMap id="BaseResultMap" type="com.saintlu.api.entity.B2cSupplier">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="supplier_name" jdbcType="VARCHAR" property="supplierName" />
+    <result column="add_time" jdbcType="TIMESTAMP" property="addTime" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="contact_number" jdbcType="VARCHAR" property="contactNumber" />
+    <result column="contact_type" jdbcType="VARCHAR" property="contactType" />
+  </resultMap>
+</mapper>
