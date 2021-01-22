@@ -21,4 +21,6 @@ public interface OrderService {
     KOrder getOrderByOrderId(String orderId);
 
     void updOrderPayInfo(String orderId, Integer status, String transactionId) throws Exception;
+
+
 }
